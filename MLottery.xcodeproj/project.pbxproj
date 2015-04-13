@@ -9,11 +9,24 @@
 /* Begin PBXBuildFile section */
 		48A7B7861ADB93DD0081EB24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7851ADB93DD0081EB24 /* main.m */; };
 		48A7B7891ADB93DD0081EB24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7881ADB93DD0081EB24 /* AppDelegate.m */; };
-		48A7B78C1ADB93DD0081EB24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B78B1ADB93DD0081EB24 /* ViewController.m */; };
 		48A7B78F1ADB93DD0081EB24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A7B78D1ADB93DD0081EB24 /* Main.storyboard */; };
 		48A7B7911ADB93DD0081EB24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A7B7901ADB93DD0081EB24 /* Images.xcassets */; };
 		48A7B7941ADB93DD0081EB24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A7B7921ADB93DD0081EB24 /* LaunchScreen.xib */; };
 		48A7B7A01ADB93DD0081EB24 /* MLotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B79F1ADB93DD0081EB24 /* MLotteryTests.m */; };
+		48A7B7B21ADBBDDE0081EB24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7B11ADBBDDE0081EB24 /* ViewController.m */; };
+		48A7B7B71ADBBDE90081EB24 /* LotteryCollectionVeiwCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7B61ADBBDE90081EB24 /* LotteryCollectionVeiwCell.m */; };
+		48A7B7BB1ADBBDEF0081EB24 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7BA1ADBBDEF0081EB24 /* ViewModel.m */; };
+		48A7B7BE1ADBBEB00081EB24 /* LotteryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7BD1ADBBEB00081EB24 /* LotteryManager.m */; };
+		48A7B7C11ADBC0270081EB24 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7BF1ADBC0270081EB24 /* Model.xcdatamodeld */; };
+		48A7B7C41ADBC2BD0081EB24 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7C31ADBC2BD0081EB24 /* UserViewController.m */; };
+		48A7B7C71ADBC2F50081EB24 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7C61ADBC2F50081EB24 /* UserViewModel.m */; };
+		48A7B7CA1ADBC87D0081EB24 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7C91ADBC87D0081EB24 /* User.m */; };
+		48A7B7CD1ADBD2CA0081EB24 /* CustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7CC1ADBD2CA0081EB24 /* CustomTransitionViewController.m */; };
+		48A7B7D01ADBD2F40081EB24 /* PresentingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7CF1ADBD2F40081EB24 /* PresentingAnimator.m */; };
+		48A7B7D31ADBD30B0081EB24 /* DismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7D21ADBD30B0081EB24 /* DismissingAnimator.m */; };
+		48A7B7D61ADBD31C0081EB24 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7D51ADBD31C0081EB24 /* ModalViewController.m */; };
+		48A7B7D91ADBD3340081EB24 /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7D81ADBD3340081EB24 /* UIColor+CustomColors.m */; };
+		AA06365546949E43E7F10A5E /* Pods_MLottery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46B29B791BF354ED471D5A5 /* Pods_MLottery.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +40,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19A69A40B5F3C50FBFD6BE5E /* Pods-MLottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLottery/Pods-MLottery.debug.xcconfig"; sourceTree = "<group>"; };
 		48A7B7801ADB93DD0081EB24 /* MLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A7B7841ADB93DD0081EB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48A7B7851ADB93DD0081EB24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48A7B7871ADB93DD0081EB24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48A7B7881ADB93DD0081EB24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		48A7B78A1ADB93DD0081EB24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		48A7B78B1ADB93DD0081EB24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		48A7B78E1ADB93DD0081EB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48A7B7901ADB93DD0081EB24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48A7B7931ADB93DD0081EB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		48A7B7991ADB93DD0081EB24 /* MLotteryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLotteryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A7B79E1ADB93DD0081EB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48A7B79F1ADB93DD0081EB24 /* MLotteryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLotteryTests.m; sourceTree = "<group>"; };
+		48A7B7B01ADBBDDE0081EB24 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		48A7B7B11ADBBDDE0081EB24 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		48A7B7B51ADBBDE90081EB24 /* LotteryCollectionVeiwCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryCollectionVeiwCell.h; sourceTree = "<group>"; };
+		48A7B7B61ADBBDE90081EB24 /* LotteryCollectionVeiwCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryCollectionVeiwCell.m; sourceTree = "<group>"; };
+		48A7B7B91ADBBDEF0081EB24 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		48A7B7BA1ADBBDEF0081EB24 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		48A7B7BC1ADBBEB00081EB24 /* LotteryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryManager.h; sourceTree = "<group>"; };
+		48A7B7BD1ADBBEB00081EB24 /* LotteryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryManager.m; sourceTree = "<group>"; };
+		48A7B7C01ADBC0270081EB24 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		48A7B7C21ADBC2BD0081EB24 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		48A7B7C31ADBC2BD0081EB24 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		48A7B7C51ADBC2F50081EB24 /* UserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
+		48A7B7C61ADBC2F50081EB24 /* UserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
+		48A7B7C81ADBC87D0081EB24 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		48A7B7C91ADBC87D0081EB24 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		48A7B7CB1ADBD2CA0081EB24 /* CustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionViewController.h; sourceTree = "<group>"; };
+		48A7B7CC1ADBD2CA0081EB24 /* CustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionViewController.m; sourceTree = "<group>"; };
+		48A7B7CE1ADBD2F40081EB24 /* PresentingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingAnimator.h; sourceTree = "<group>"; };
+		48A7B7CF1ADBD2F40081EB24 /* PresentingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingAnimator.m; sourceTree = "<group>"; };
+		48A7B7D11ADBD30B0081EB24 /* DismissingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissingAnimator.h; sourceTree = "<group>"; };
+		48A7B7D21ADBD30B0081EB24 /* DismissingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissingAnimator.m; sourceTree = "<group>"; };
+		48A7B7D41ADBD31C0081EB24 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		48A7B7D51ADBD31C0081EB24 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		48A7B7D71ADBD3340081EB24 /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		48A7B7D81ADBD3340081EB24 /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		D62D8C965E1BA3C50F50FB14 /* Pods-MLottery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLottery.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLottery/Pods-MLottery.release.xcconfig"; sourceTree = "<group>"; };
+		F46B29B791BF354ED471D5A5 /* Pods_MLottery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLottery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA06365546949E43E7F10A5E /* Pods_MLottery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1595B9F782546D03253600F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F46B29B791BF354ED471D5A5 /* Pods_MLottery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48A7B7771ADB93DD0081EB24 = {
 			isa = PBXGroup;
 			children = (
 				48A7B7821ADB93DD0081EB24 /* MLottery */,
 				48A7B79C1ADB93DD0081EB24 /* MLotteryTests */,
 				48A7B7811ADB93DD0081EB24 /* Products */,
+				BA3887D22E56FD4E18B40535 /* Pods */,
+				1595B9F782546D03253600F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +131,19 @@
 		48A7B7821ADB93DD0081EB24 /* MLottery */ = {
 			isa = PBXGroup;
 			children = (
+				48A7B7C81ADBC87D0081EB24 /* User.h */,
+				48A7B7C91ADBC87D0081EB24 /* User.m */,
+				48A7B7B81ADBBDEF0081EB24 /* ViewModel */,
+				48A7B7B41ADBBDE90081EB24 /* View */,
+				48A7B7B31ADBBDE40081EB24 /* Manager */,
+				48A7B7AF1ADBBDDE0081EB24 /* Controller */,
 				48A7B7871ADB93DD0081EB24 /* AppDelegate.h */,
 				48A7B7881ADB93DD0081EB24 /* AppDelegate.m */,
-				48A7B78A1ADB93DD0081EB24 /* ViewController.h */,
-				48A7B78B1ADB93DD0081EB24 /* ViewController.m */,
 				48A7B78D1ADB93DD0081EB24 /* Main.storyboard */,
 				48A7B7901ADB93DD0081EB24 /* Images.xcassets */,
 				48A7B7921ADB93DD0081EB24 /* LaunchScreen.xib */,
 				48A7B7831ADB93DD0081EB24 /* Supporting Files */,
+				48A7B7BF1ADBC0270081EB24 /* Model.xcdatamodeld */,
 			);
 			path = MLottery;
 			sourceTree = "<group>";
@@ -119,6 +174,65 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		48A7B7AF1ADBBDDE0081EB24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48A7B7D71ADBD3340081EB24 /* UIColor+CustomColors.h */,
+				48A7B7D81ADBD3340081EB24 /* UIColor+CustomColors.m */,
+				48A7B7D41ADBD31C0081EB24 /* ModalViewController.h */,
+				48A7B7D51ADBD31C0081EB24 /* ModalViewController.m */,
+				48A7B7D11ADBD30B0081EB24 /* DismissingAnimator.h */,
+				48A7B7D21ADBD30B0081EB24 /* DismissingAnimator.m */,
+				48A7B7CE1ADBD2F40081EB24 /* PresentingAnimator.h */,
+				48A7B7CF1ADBD2F40081EB24 /* PresentingAnimator.m */,
+				48A7B7CB1ADBD2CA0081EB24 /* CustomTransitionViewController.h */,
+				48A7B7CC1ADBD2CA0081EB24 /* CustomTransitionViewController.m */,
+				48A7B7B01ADBBDDE0081EB24 /* ViewController.h */,
+				48A7B7B11ADBBDDE0081EB24 /* ViewController.m */,
+				48A7B7C21ADBC2BD0081EB24 /* UserViewController.h */,
+				48A7B7C31ADBC2BD0081EB24 /* UserViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48A7B7B31ADBBDE40081EB24 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				48A7B7BC1ADBBEB00081EB24 /* LotteryManager.h */,
+				48A7B7BD1ADBBEB00081EB24 /* LotteryManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		48A7B7B41ADBBDE90081EB24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48A7B7B51ADBBDE90081EB24 /* LotteryCollectionVeiwCell.h */,
+				48A7B7B61ADBBDE90081EB24 /* LotteryCollectionVeiwCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48A7B7B81ADBBDEF0081EB24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				48A7B7B91ADBBDEF0081EB24 /* ViewModel.h */,
+				48A7B7BA1ADBBDEF0081EB24 /* ViewModel.m */,
+				48A7B7C51ADBC2F50081EB24 /* UserViewModel.h */,
+				48A7B7C61ADBC2F50081EB24 /* UserViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA3887D22E56FD4E18B40535 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19A69A40B5F3C50FBFD6BE5E /* Pods-MLottery.debug.xcconfig */,
+				D62D8C965E1BA3C50F50FB14 /* Pods-MLottery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48A7B7A31ADB93DD0081EB24 /* Build configuration list for PBXNativeTarget "MLottery" */;
 			buildPhases = (
+				D5CBE10025AB6D3286498C57 /* Check Pods Manifest.lock */,
 				48A7B77C1ADB93DD0081EB24 /* Sources */,
 				48A7B77D1ADB93DD0081EB24 /* Frameworks */,
 				48A7B77E1ADB93DD0081EB24 /* Resources */,
+				446BC02499A5ED86DA0C0BFC /* Copy Pods Resources */,
+				7B992FD09F566C5EB79DF4C8 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,14 +331,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		446BC02499A5ED86DA0C0BFC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLottery/Pods-MLottery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B992FD09F566C5EB79DF4C8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLottery/Pods-MLottery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5CBE10025AB6D3286498C57 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48A7B77C1ADB93DD0081EB24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A7B78C1ADB93DD0081EB24 /* ViewController.m in Sources */,
+				48A7B7CA1ADBC87D0081EB24 /* User.m in Sources */,
+				48A7B7D01ADBD2F40081EB24 /* PresentingAnimator.m in Sources */,
+				48A7B7D61ADBD31C0081EB24 /* ModalViewController.m in Sources */,
+				48A7B7B71ADBBDE90081EB24 /* LotteryCollectionVeiwCell.m in Sources */,
+				48A7B7B21ADBBDDE0081EB24 /* ViewController.m in Sources */,
+				48A7B7C71ADBC2F50081EB24 /* UserViewModel.m in Sources */,
+				48A7B7BB1ADBBDEF0081EB24 /* ViewModel.m in Sources */,
+				48A7B7C11ADBC0270081EB24 /* Model.xcdatamodeld in Sources */,
 				48A7B7891ADB93DD0081EB24 /* AppDelegate.m in Sources */,
+				48A7B7C41ADBC2BD0081EB24 /* UserViewController.m in Sources */,
 				48A7B7861ADB93DD0081EB24 /* main.m in Sources */,
+				48A7B7D31ADBD30B0081EB24 /* DismissingAnimator.m in Sources */,
+				48A7B7D91ADBD3340081EB24 /* UIColor+CustomColors.m in Sources */,
+				48A7B7CD1ADBD2CA0081EB24 /* CustomTransitionViewController.m in Sources */,
+				48A7B7BE1ADBBEB00081EB24 /* LotteryManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +524,7 @@
 		};
 		48A7B7A41ADB93DD0081EB24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A69A40B5F3C50FBFD6BE5E /* Pods-MLottery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MLottery/Info.plist;
@@ -357,6 +535,7 @@
 		};
 		48A7B7A51ADB93DD0081EB24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D62D8C965E1BA3C50F50FB14 /* Pods-MLottery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MLottery/Info.plist;
@@ -418,6 +597,7 @@
 				48A7B7A51ADB93DD0081EB24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48A7B7A61ADB93DD0081EB24 /* Build configuration list for PBXNativeTarget "MLotteryTests" */ = {
 			isa = XCConfigurationList;
@@ -426,8 +606,22 @@
 				48A7B7A81ADB93DD0081EB24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48A7B7BF1ADBC0270081EB24 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48A7B7C01ADBC0270081EB24 /* Model.xcdatamodel */,
+			);
+			currentVersion = 48A7B7C01ADBC0270081EB24 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 48A7B7781ADB93DD0081EB24 /* Project object */;
 }

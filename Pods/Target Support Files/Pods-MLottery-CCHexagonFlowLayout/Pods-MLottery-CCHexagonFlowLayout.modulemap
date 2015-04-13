@@ -1,0 +1,6 @@
+framework module CCHexagonFlowLayout {
+  umbrella header "Pods-MLottery-CCHexagonFlowLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_MLottery {
+  umbrella header "Pods-MLottery-umbrella.h"
+
+  export *
+  module * { export * }
+}
