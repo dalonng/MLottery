@@ -8,6 +8,8 @@ target 'MLottery' do
     pod 'CCHexagonFlowLayout'
     pod 'pop'
     pod 'MagicalRecord',            '2.2'
+    pod 'Masonry'
+    pod 'MLPSpotlight',             '1.2'
 end
 
 target 'MLotteryTests' do

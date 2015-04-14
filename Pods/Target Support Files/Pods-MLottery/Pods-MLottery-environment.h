@@ -12,6 +12,12 @@
 #define COCOAPODS_VERSION_MINOR_CCHexagonFlowLayout 0
 #define COCOAPODS_VERSION_PATCH_CCHexagonFlowLayout 2
 
+// MLPSpotlight
+#define COCOAPODS_POD_AVAILABLE_MLPSpotlight
+#define COCOAPODS_VERSION_MAJOR_MLPSpotlight 1
+#define COCOAPODS_VERSION_MINOR_MLPSpotlight 2
+#define COCOAPODS_VERSION_PATCH_MLPSpotlight 0
+
 // MagicalRecord
 #define COCOAPODS_POD_AVAILABLE_MagicalRecord
 #define COCOAPODS_VERSION_MAJOR_MagicalRecord 2
@@ -23,6 +29,12 @@
 #define COCOAPODS_VERSION_MAJOR_MagicalRecord_Core 2
 #define COCOAPODS_VERSION_MINOR_MagicalRecord_Core 2
 #define COCOAPODS_VERSION_PATCH_MagicalRecord_Core 0
+
+// Masonry
+#define COCOAPODS_POD_AVAILABLE_Masonry
+#define COCOAPODS_VERSION_MAJOR_Masonry 0
+#define COCOAPODS_VERSION_MINOR_Masonry 6
+#define COCOAPODS_VERSION_PATCH_Masonry 1
 
 // pop
 #define COCOAPODS_POD_AVAILABLE_pop

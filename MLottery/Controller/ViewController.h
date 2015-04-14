@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) NSString* luckyDog;
+
+- (void)didDissmissModalViewController;
 
 @end
 

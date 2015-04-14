@@ -15,4 +15,6 @@
 - (NSUInteger)numberOfUsers;
 - (NSString *)nameWithIndexPath:(NSIndexPath *)indexPath;
 
+- (void)deleteUserWithName:(NSString *)name completion:(void (^)(BOOL success))completion;
+
 @end

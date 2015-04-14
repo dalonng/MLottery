@@ -14,5 +14,6 @@
 - (NSString *)nameWithIndexPath:(NSIndexPath *)indexPath;
 
 - (void)addUserWithName:(NSString *)name completion:(void (^)(BOOL success))completion;
+- (void)deleteUserWithName:(NSString *)name completion:(void (^)(BOOL success))completion;
 
 @end

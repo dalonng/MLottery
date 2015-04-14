@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MLottery-MLPSpotlight.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MLottery-MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MLottery-Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C4C2A05E613545E31F01E4DD</key>
+		<key>1F9F147C570921935BACA6B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF61ACAB3F860A7D847E9B70</key>
+		<key>52C7D8DF98F1B43839AA9C59</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D5D78C413A3F8B314D855E82</key>
+		<key>60BA1E2780AD5BDF4C9C0D5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F42C479620D756C4921C18F2</key>
+		<key>7046A9798264149AE6D97A25</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82FB5B108F0919D4905720E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A91C2DEC5E0F6D32537C5B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

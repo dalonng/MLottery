@@ -8,6 +8,7 @@
 
 #import "UserViewController.h"
 #import "UserViewModel.h"
+#import "ViewController.h"
 
 @interface UserViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -21,6 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _viewModel = [UserViewModel new];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Actions
@@ -55,10 +61,6 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-- (IBAction)handleStartLottery:(id)sender {
-    
-}
-
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_viewModel numberOfUsers];
@@ -68,6 +70,33 @@
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
     cell.textLabel.text = [_viewModel nameWithIndexPath:indexPath];
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    switch (editingStyle) {
+        case UITableViewCellEditingStyleDelete: {
+            [_viewModel deleteUserWithName:[_viewModel nameWithIndexPath:indexPath] completion:^(BOOL success) {
+                NSLog(@"delete");
+                [self.tableView reloadData];
+            }];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+- (IBAction)handleStartLotteryEvent:(id)sender {
+    if (_viewModel.numberOfUsers == 0) {
+        return;
+    }
+    ViewController* viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

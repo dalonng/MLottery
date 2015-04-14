@@ -1,0 +1,6 @@
+framework module MLPSpotlight {
+  umbrella header "Pods-MLottery-MLPSpotlight-umbrella.h"
+
+  export *
+  module * { export * }
+}

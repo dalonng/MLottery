@@ -14,7 +14,8 @@
 @implementation UserViewModel
 
 - (NSUInteger)numberOfUsers {
-    return [User MR_findAll].count;
+    NSArray* users = [User MR_findAll];
+    return users.count;
 }
 
 - (NSString *)nameWithIndexPath:(NSIndexPath *)indexPath {
@@ -30,11 +31,22 @@
             return;
         }
     }
-    User* user = [User MR_createEntity];
-    user.name = name;
     [MagicalRecord saveUsingCurrentThreadContextWithBlock:^(NSManagedObjectContext *localContext) {
         User *userManagedObject = [User MR_createEntity];
         userManagedObject.name = name;
+    } completion:^(BOOL success, NSError *error) {
+        if (completion) {
+            completion(error ? NO : YES);
+        }
+    }];
+}
+
+- (void)deleteUserWithName:(NSString *)name completion:(void (^)(BOOL success))completion {
+    [MagicalRecord saveUsingCurrentThreadContextWithBlock:^(NSManagedObjectContext *localContext) {
+        NSArray* users = [User MR_findByAttribute:@"name" withValue:name];
+        for (User* user in users) {
+            [user MR_deleteEntity];
+        }
     } completion:^(BOOL success, NSError *error) {
         if (completion) {
             completion(error ? NO : YES);

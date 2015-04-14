@@ -9,6 +9,8 @@
 #import "ModalViewController.h"
 #import "UIColor+CustomColors.h"
 
+@import Masonry;
+
 @interface ModalViewController()
 - (void)addDismissButton;
 - (void)dismiss:(id)sender;
@@ -33,7 +35,7 @@
     dismissButton.translatesAutoresizingMaskIntoConstraints = NO;
     dismissButton.tintColor = [UIColor whiteColor];
     dismissButton.titleLabel.font = [UIFont fontWithName:@"Avenir" size:20];
-    [dismissButton setTitle:@"Dismiss" forState:UIControlStateNormal];
+    [dismissButton setTitle:@"确定" forState:UIControlStateNormal];
     [dismissButton addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:dismissButton];
 
@@ -50,11 +52,21 @@
                                options:0
                                metrics:nil
                                views:NSDictionaryOfVariableBindings(dismissButton)]];
+    UILabel* label = [UILabel new];
+    label.text = _viewController.luckyDog;
+    label.font = [UIFont fontWithName:@"Avenir" size:40];
+    [self.view addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(label.superview.mas_centerX);
+        make.centerY.equalTo(label.superview.mas_centerY);
+    }];
 }
 
 - (void)dismiss:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [_viewController didDissmissModalViewController];
+    }];
 }
 
 @end

@@ -62,6 +62,18 @@ UIViewControllerTransitioningDelegate>
     _runable ? [self doAnimation] : nil ;
 }
 
+- (void)didDissmissModalViewController {
+    [_viewModel deleteUserWithName:[_viewModel nameWithIndexPath:_currentIndexPath]
+                        completion:^(BOOL success) {
+//                            NSLog(@"delete : %@", [_viewModel nameWithIndexPath:_currentIndexPath]);
+                            [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+}
+
+- (NSString *)luckyDog {
+    return [_viewModel nameWithIndexPath:_currentIndexPath];
+}
+
 - (void)doAnimation {
     NSLog(@"indexPath : %@", _currentIndexPath);
     LotteryCollectionVeiwCell* cell = (LotteryCollectionVeiwCell*)[_collectionView cellForItemAtIndexPath:_currentIndexPath];
@@ -90,6 +102,7 @@ UIViewControllerTransitioningDelegate>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [_viewModel numberOfUsers];
 }
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LotteryCollectionVeiwCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LotteryCollectionVeiwCell"
@@ -103,12 +116,12 @@ UIViewControllerTransitioningDelegate>
     [sender setTitle: (_runable?@"结束":@"开始") forState:UIControlStateNormal];
     _runable ? [self doAnimation] :[self present:nil];
 }
-- (void)present:(id)sender
-{
+
+- (void)present:(id)sender {
     ModalViewController *modalViewController = [ModalViewController new];
     modalViewController.transitioningDelegate = self;
     modalViewController.modalPresentationStyle = UIModalPresentationCustom;
-    
+    modalViewController.viewController = self;
     [self presentViewController:modalViewController animated:YES completion:NULL];
 }
 
@@ -121,7 +134,6 @@ UIViewControllerTransitioningDelegate>
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-//    [self dismissViewControllerAnimated:YES completion:nil];
     return [DismissingAnimator new];
 }
 

@@ -49,11 +49,15 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'CCHexagonFlowLayout.framework'
+  install_framework 'MLPSpotlight.framework'
   install_framework 'MagicalRecord.framework'
+  install_framework 'Masonry.framework'
   install_framework 'pop.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'CCHexagonFlowLayout.framework'
+  install_framework 'MLPSpotlight.framework'
   install_framework 'MagicalRecord.framework'
+  install_framework 'Masonry.framework'
   install_framework 'pop.framework'
 fi

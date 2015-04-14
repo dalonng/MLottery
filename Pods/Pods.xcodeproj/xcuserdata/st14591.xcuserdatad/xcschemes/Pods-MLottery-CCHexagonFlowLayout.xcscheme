@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF61ACAB3F860A7D847E9B70"
+               BlueprintIdentifier = "1F9F147C570921935BACA6B6"
                BuildableName = "CCHexagonFlowLayout.framework"
                BlueprintName = "Pods-MLottery-CCHexagonFlowLayout"
                ReferencedContainer = "container:Pods.xcodeproj">

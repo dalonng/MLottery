@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface ModalViewController : UIViewController
+
+@property (nonatomic, strong) ViewController* viewController;
 
 @end

@@ -14,7 +14,7 @@
 @dynamic name;
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<%@: %p> name: %@", NSClassFromString([self class]), self, self.name];
+    return [NSString stringWithFormat:@"<%@: %p> name: %@", NSStringFromClass([self class]), self, self.name];
 }
 
 @end

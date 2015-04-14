@@ -3,16 +3,22 @@ PODS:
   - MagicalRecord (2.2):
     - MagicalRecord/Core (= 2.2)
   - MagicalRecord/Core (2.2)
+  - Masonry (0.6.1)
+  - MLPSpotlight (1.2)
   - pop (1.0.7)
 
 DEPENDENCIES:
   - CCHexagonFlowLayout
   - MagicalRecord (= 2.2)
+  - Masonry
+  - MLPSpotlight (= 1.2)
   - pop
 
 SPEC CHECKSUMS:
   CCHexagonFlowLayout: b500d18bfb2381d6b02d2a69686831a3186b62e7
   MagicalRecord: f8a56bb87ab6552f20c4bb8681a1958a197ea3cd
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  MLPSpotlight: b0d1c298dcda0c164110a59c702c4460aa9229a5
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
 
 COCOAPODS: 0.36.3
