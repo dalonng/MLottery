@@ -57,9 +57,11 @@ UIViewControllerTransitioningDelegate>
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    [self removeCurrentAnimation];
-    [self nextIndexPath];
-    _runable ? [self doAnimation] : nil ;
+    if (_runable) {
+        [self removeCurrentAnimation];
+        [self nextIndexPath];
+        [self doAnimation];
+    }
 }
 
 - (void)didDissmissModalViewController {
@@ -114,7 +116,11 @@ UIViewControllerTransitioningDelegate>
 - (IBAction)handleLotteryEvent:(UIButton *)sender {
     _runable = !_runable;
     [sender setTitle: (_runable?@"结束":@"开始") forState:UIControlStateNormal];
-    _runable ? [self doAnimation] :[self present:nil];
+    if (_runable == NO) {
+        [self present:nil];
+    } else {
+        [self doAnimation];
+    }
 }
 
 - (void)present:(id)sender {

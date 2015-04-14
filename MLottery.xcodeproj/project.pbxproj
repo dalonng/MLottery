@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		489D61CA1ADCC37C00039810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489D61C91ADCC37C00039810 /* LaunchScreen.storyboard */; };
 		489D61CD1ADCC39700039810 /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D61CC1ADCC39700039810 /* LaunchScreenViewController.m */; };
+		489D61CF1ADCF4A300039810 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489D61CE1ADCF4A300039810 /* LaunchScreen.xib */; };
 		48A7B7861ADB93DD0081EB24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7851ADB93DD0081EB24 /* main.m */; };
 		48A7B7891ADB93DD0081EB24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7881ADB93DD0081EB24 /* AppDelegate.m */; };
 		48A7B78F1ADB93DD0081EB24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A7B78D1ADB93DD0081EB24 /* Main.storyboard */; };
@@ -41,9 +41,9 @@
 
 /* Begin PBXFileReference section */
 		19A69A40B5F3C50FBFD6BE5E /* Pods-MLottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLottery/Pods-MLottery.debug.xcconfig"; sourceTree = "<group>"; };
-		489D61C91ADCC37C00039810 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		489D61CB1ADCC39700039810 /* LaunchScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
 		489D61CC1ADCC39700039810 /* LaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
+		489D61CE1ADCF4A300039810 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		48A7B7801ADB93DD0081EB24 /* MLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A7B7841ADB93DD0081EB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48A7B7851ADB93DD0081EB24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,9 +143,9 @@
 				48A7B7901ADB93DD0081EB24 /* Images.xcassets */,
 				48A7B7831ADB93DD0081EB24 /* Supporting Files */,
 				48A7B7BF1ADBC0270081EB24 /* Model.xcdatamodeld */,
-				489D61C91ADCC37C00039810 /* LaunchScreen.storyboard */,
 				489D61CB1ADCC39700039810 /* LaunchScreenViewController.h */,
 				489D61CC1ADCC39700039810 /* LaunchScreenViewController.m */,
+				489D61CE1ADCF4A300039810 /* LaunchScreen.xib */,
 			);
 			path = MLottery;
 			sourceTree = "<group>";
@@ -285,6 +285,7 @@
 				TargetAttributes = {
 					48A7B77F1ADB93DD0081EB24 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 463933GDHF;
 					};
 					48A7B7981ADB93DD0081EB24 = {
 						CreatedOnToolsVersion = 6.3;
@@ -317,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A7B78F1ADB93DD0081EB24 /* Main.storyboard in Resources */,
-				489D61CA1ADCC37C00039810 /* LaunchScreen.storyboard in Resources */,
+				489D61CF1ADCF4A300039810 /* LaunchScreen.xib in Resources */,
 				48A7B7911ADB93DD0081EB24 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,9 +520,14 @@
 			baseConfigurationReference = 19A69A40B5F3C50FBFD6BE5E /* Pods-MLottery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -530,9 +536,14 @@
 			baseConfigurationReference = D62D8C965E1BA3C50F50FB14 /* Pods-MLottery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
