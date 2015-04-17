@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		489D61CD1ADCC39700039810 /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D61CC1ADCC39700039810 /* LaunchScreenViewController.m */; };
 		489D61CF1ADCF4A300039810 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489D61CE1ADCF4A300039810 /* LaunchScreen.xib */; };
 		48A7B7861ADB93DD0081EB24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7851ADB93DD0081EB24 /* main.m */; };
 		48A7B7891ADB93DD0081EB24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B7881ADB93DD0081EB24 /* AppDelegate.m */; };
@@ -41,8 +40,6 @@
 
 /* Begin PBXFileReference section */
 		19A69A40B5F3C50FBFD6BE5E /* Pods-MLottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLottery/Pods-MLottery.debug.xcconfig"; sourceTree = "<group>"; };
-		489D61CB1ADCC39700039810 /* LaunchScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
-		489D61CC1ADCC39700039810 /* LaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
 		489D61CE1ADCF4A300039810 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		48A7B7801ADB93DD0081EB24 /* MLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A7B7841ADB93DD0081EB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,8 +140,6 @@
 				48A7B7901ADB93DD0081EB24 /* Images.xcassets */,
 				48A7B7831ADB93DD0081EB24 /* Supporting Files */,
 				48A7B7BF1ADBC0270081EB24 /* Model.xcdatamodeld */,
-				489D61CB1ADCC39700039810 /* LaunchScreenViewController.h */,
-				489D61CC1ADCC39700039810 /* LaunchScreenViewController.m */,
 				489D61CE1ADCF4A300039810 /* LaunchScreen.xib */,
 			);
 			path = MLottery;
@@ -390,7 +385,6 @@
 				48A7B7D61ADBD31C0081EB24 /* ModalViewController.m in Sources */,
 				48A7B7B71ADBBDE90081EB24 /* LotteryCollectionVeiwCell.m in Sources */,
 				48A7B7B21ADBBDDE0081EB24 /* ViewController.m in Sources */,
-				489D61CD1ADCC39700039810 /* LaunchScreenViewController.m in Sources */,
 				48A7B7C71ADBC2F50081EB24 /* UserViewModel.m in Sources */,
 				48A7B7BB1ADBBDEF0081EB24 /* ViewModel.m in Sources */,
 				48A7B7C11ADBC0270081EB24 /* Model.xcdatamodeld in Sources */,

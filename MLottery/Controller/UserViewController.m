@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _viewModel = [UserViewModel new];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

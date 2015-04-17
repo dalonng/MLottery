@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "LaunchScreenViewController.h"
 
 @import MagicalRecord;
 
