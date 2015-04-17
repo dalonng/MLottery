@@ -11,6 +11,8 @@
 
 @import Masonry;
 
+#define IPAD     (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
 @interface ModalViewController()
 - (void)addDismissButton;
 - (void)dismiss:(id)sender;
@@ -54,12 +56,15 @@
                                views:NSDictionaryOfVariableBindings(dismissButton)]];
     UILabel* label = [UILabel new];
     label.text = _viewController.luckyDog;
-    label.font = [UIFont fontWithName:@"Avenir" size:40];
+    
+    label.font = [UIFont boldSystemFontOfSize:(100)];
+    label.textColor = [UIColor whiteColor];
     [self.view addSubview:label];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(label.superview.mas_centerX);
         make.centerY.equalTo(label.superview.mas_centerY);
     }];
+    label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 }
 
 - (void)dismiss:(id)sender
